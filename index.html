@@ -1,135 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Travel Blog</title>
-    <style>
-        body{
-            font-family:'Chicago',Arial, sans-serif;
-            display:flex;
-            margin:0;
-            padding:0;
-        }
-        main{
-            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-tourism-travel-lighthouse-cloud-image_14516.jpg');
-            flex:4;
-            padding:50px;
-        }
-        aside{
-            flex:1;
-            background-color: #FFFAFA;
-            padding:10px;
-            border-left: 1px; 
-        }
-        header, footer{
-            width: 100%;
-            text-align: center;
-            padding: 10px 0;
-            background-color: plum;
-            color: floralwhite;
-        }
-        section{
-            margin-bottom: 10px;
-        }
-        article{
-            background-color: aliceblue;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 20px;
-        }
-        table{
-            width:100%;
-            border-style: solid;
-            margin-top: 30px;
-        }
-        table, th, td {
-            border: 2px;
-            border-color: black;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        img{
-            max-width: 100%;
-            border-radius: 30px;
-        }
-        ul{
-            padding: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Bookstore</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+   
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      z-index: 0;
+    }
+
+    
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #ccc;
+    }
+
+    
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 30px;
+    }
+
+    
+    .book-card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+    .book-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .book-image {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-bottom: 2px solid #fff;
+    }
+
+    .book-info {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .book-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+    }
+
+    .book-author {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 15px;
+      color: #ddd;
+      font-style: italic;
+    }
+
+    .book-price {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #f0b429;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .book-image {
+        height: 220px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <main>]
-        <header>
-            <h1>Destination Dreamers🗺️</h1>
-            <p>Crafting journeys as unique as your dreams.</p>
-        </header>
-        <section>
-            <article>
-                <h2>Top Travel Destinations</h2>
-                <ul>
-                    <li>Paris,France</li>
-                    <li>Blue Lagoon,Iceland</li>
-                    <li>Venice,Italy</li>
-                </ul>
-            </article>
-            <article>
-                <h2>Destination Highlights:Venice</h2>
-                <img src="https://media.timeout.com/images/106251721/1920/1440/image.webp" alt="Venice">
-                <p>Venice is famous for its unique network of canals, which serve as its streets and transportation system, earning it the nickname "City of Canals". It's also renowned for its stunning architecture, beautiful bridges, and picturesque scenery, making it a popular tourist destination.</p>
-            </article>
-            <article>
-                <h2>Destination Highlights:Paris</h2>
-                <img src="https://skysafar.in/wp-content/uploads/2024/08/Paris-5.png" alt="Paris">
-                <p>Paris, also known as the "City of Light," is famous for its iconic landmarks, world-class art and culture, and romantic atmosphere. It's renowned for attractions like the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral, as well as its fashion, cuisine, and vibrant cafe culture.</p>
-            </article>
-            <article>
-                <h2>Cost Comparison Table</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Destination</th>
-                            <th>Avg Daily Cost(USD)</th>
-                            <th>Best Travel Month</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Paris</td>
-                            <td>$126 </td>
-                            <td>September & October</td>
-                        </tr>
-                        <tr>
-                            <td>Blue Lagoon</td>
-                            <td>$103 </td>
-                            <td>May to August</td>
-                        </tr>
-                        <tr>
-                            <td>Venice</td>
-                            <td>$250</td>
-                            <td>April to June</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-        </section>
-        <footer>
-            <p>&copy; 2025 Destination Dreamers.All rights reserved. </p>
-        </footer>
-    </main>
-    <aside>
-        <h3>Travel Tips💡</h3>
-        <p>Plan ahead, pack light, stay safe, respect local customs, manage your money wisely, and use travel apps to make your journey smoother and more enjoyable.</p>
-        <h3>Limited-Time Offers</h3>
-        <p>🔥 Save 20% on all Europe tours this summer!</p>
-        <a href="/deals">View All Deals</a>
-        <h3>Quick Links</h3>
-        <ul>
-            <li><a href="#" >Visa Requirements</a></li>
-            <li><a href="#" >Packing Checklist</a></li>
-            <li><a href="#" >Travel Insurance</a></li>
-        </ul>
-    </aside>
+  <div class="container">
+    <header>
+      <h1>Book Haven</h1>
+      <p>Your online destination for the best books</p>
+    </header>
+
+    <section class="book-grid">
+      <article class="book-card">
+        <img class="book-image" src="https://images-na.ssl-images-amazon.com/images/I/81eB+7+CkUL.jpg" alt="The Great Gatsby" />
+        <div class="book-info">
+          <h2 class="book-title">The Great Gatsby</h2>
+          <p class="book-author">by F. Scott Fitzgerald</p>
+          <p class="book-price">$12.99</p>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <img class="book-image" src="https://images-na.ssl-images-amazon.com/images/I/91hhCXj9dbL.jpg" alt="To Kill a Mockingbird" />
+        <div class="book-info">
+          <h2 class="book-title">To Kill a Mockingbird</h2>
+          <p class="book-author">by Harper Lee</p>
+          <p class="book-price">$9.99</p>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <img class="book-image" src="https://images-na.ssl-images-amazon.com/images/I/81iqZ2HHD-L.jpg" alt="1984" />
+        <div class="book-info">
+          <h2 class="book-title">1984</h2>
+          <p class="book-author">by George Orwell</p>
+          <p class="book-price">$14.50</p>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <img class="book-image" src="https://images-na.ssl-images-amazon.com/images/I/91SZSW8qSsL.jpg" alt="Pride and Prejudice" />
+        <div class="book-info">
+          <h2 class="book-title">Pride and Prejudice</h2>
+          <p class="book-author">by Jane Austen</p>
+          <p class="book-price">$11.99</p>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <img class="book-image" src="https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg" alt="The Catcher in the Rye" />
+        <div class="book-info">
+          <h2 class="book-title">The Catcher in the Rye</h2>
+          <p class="book-author">by J.D. Salinger</p>
+          <p class="book-price">$10.99</p>
+        </div>
+      </article>
+    </section>
+    <footer>
+      &copy; 2025 Book Haven | All rights reserved
+    </footer>
+  </div>
 </body>
 </html>
