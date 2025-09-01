@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Blog</title>
+    <style>
+        body{
+            font-family:'Chicago',Arial, sans-serif;
+            display:flex;
+            margin:0;
+            padding:0;
+        }
+        main{
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-tourism-travel-lighthouse-cloud-image_14516.jpg');
+            flex:4;
+            padding:50px;
+        }
+        aside{
+            flex:1;
+            background-color: #FFFAFA;
+            padding:10px;
+            border-left: 1px; 
+        }
+        header, footer{
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: plum;
+            color: floralwhite;
+        }
+        section{
+            margin-bottom: 10px;
+        }
+        article{
+            background-color: aliceblue;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 20px;
+        }
+        table{
+            width:100%;
+            border-style: solid;
+            margin-top: 30px;
+        }
+        table, th, td {
+            border: 2px;
+            border-color: black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        img{
+            max-width: 100%;
+            border-radius: 30px;
+        }
+        ul{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>]
+        <header>
+            <h1>Destination Dreamers🗺️</h1>
+            <p>Crafting journeys as unique as your dreams.</p>
+        </header>
+        <section>
+            <article>
+                <h2>Top Travel Destinations</h2>
+                <ul>
+                    <li>Paris,France</li>
+                    <li>Blue Lagoon,Iceland</li>
+                    <li>Venice,Italy</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Destination Highlights:Venice</h2>
+                <img src="https://media.timeout.com/images/106251721/1920/1440/image.webp" alt="Venice">
+                <p>Venice is famous for its unique network of canals, which serve as its streets and transportation system, earning it the nickname "City of Canals". It's also renowned for its stunning architecture, beautiful bridges, and picturesque scenery, making it a popular tourist destination.</p>
+            </article>
+            <article>
+                <h2>Destination Highlights:Paris</h2>
+                <img src="https://skysafar.in/wp-content/uploads/2024/08/Paris-5.png" alt="Paris">
+                <p>Paris, also known as the "City of Light," is famous for its iconic landmarks, world-class art and culture, and romantic atmosphere. It's renowned for attractions like the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral, as well as its fashion, cuisine, and vibrant cafe culture.</p>
+            </article>
+            <article>
+                <h2>Cost Comparison Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Destination</th>
+                            <th>Avg Daily Cost(USD)</th>
+                            <th>Best Travel Month</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Paris</td>
+                            <td>$126 </td>
+                            <td>September & October</td>
+                        </tr>
+                        <tr>
+                            <td>Blue Lagoon</td>
+                            <td>$103 </td>
+                            <td>May to August</td>
+                        </tr>
+                        <tr>
+                            <td>Venice</td>
+                            <td>$250</td>
+                            <td>April to June</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <footer>
+            <p>&copy; 2025 Destination Dreamers.All rights reserved. </p>
+        </footer>
+    </main>
+    <aside>
+        <h3>Travel Tips💡</h3>
+        <p>Plan ahead, pack light, stay safe, respect local customs, manage your money wisely, and use travel apps to make your journey smoother and more enjoyable.</p>
+        <h3>Limited-Time Offers</h3>
+        <p>🔥 Save 20% on all Europe tours this summer!</p>
+        <a href="/deals">View All Deals</a>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#" >Visa Requirements</a></li>
+            <li><a href="#" >Packing Checklist</a></li>
+            <li><a href="#" >Travel Insurance</a></li>
+        </ul>
+    </aside>
+</body>
+</html>
